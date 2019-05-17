@@ -14,7 +14,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
+import { LoginComponent } from './pages/login/login.component';
 
+// Modulos: manual
+import { FormsModule } from '@angular/forms';
+import { DemoComponent } from './pages/demo/demo.component';
 
 
 @NgModule({
@@ -24,12 +29,16 @@ import { ItemComponent } from './pages/item/item.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent,
+    LoginComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

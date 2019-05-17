@@ -1,0 +1,19 @@
+<div class="ae-grid ae-grid--collapse">
+    <div class="ae-grid__item item-lg-6">
+        <h4>Login de usuarios</h4>
+
+
+        <form ngNativeValidate #f="ngForm" class="ae-form--full" (ngSubmit)="ingresar( f )">
+            <input ngModel name="email" type="email" placeholder="Correo del usuario" required>
+            <input ngModel name="password" type="text" placeholder="Contraseña" required>
+            <p class="au-xs-ta-right au-pt-4 group-buttons">
+
+                <button class="arrow-button arrow-button--right arrow-button--out" type="submit">Ingresar</button>
+
+            </p>
+        </form>
+
+
+
+    </div>
+</div>
